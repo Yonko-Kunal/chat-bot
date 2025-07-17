@@ -17,7 +17,7 @@ function App() {
     try {
       const apiKey = import.meta.env.VITE_GEMIMI_API;
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
         method: "post",
         data: {
           contents: [{
